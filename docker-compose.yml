@@ -1,0 +1,7 @@
+version: '3'
+services:
+    hubot:
+        build: ./container/hubot/
+        volumes:
+            - ./container/hubot/:/home/hubot/
+        env_file: ./container/hubot/.env
